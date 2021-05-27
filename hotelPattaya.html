@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dre@m_Te@m</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="lib/animate/animate.min.css">
+  <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="lib/ionicons/css/ionicons.min.css">
+
+  <script type="text/javascript" src="jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $(".navbar a").click(function(){
+        $("body,html").animate({
+          scrollTop:$("#"+$(this).data('value')).offset().top},1000)
+        })
+      })
+  </script>
+
+  <style type="text/css">
+    .hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.hovereffect:hover img {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.7" /><feFuncG type="linear" slope="0.7" /><feFuncB type="linear" slope="0.7" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(0.7);
+  -webkit-filter: brightness(0.7);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-size: 17px;
+  padding: 10px;
+  width: 100%;
+}
+
+.hovereffect:hover h2 {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transform: translate3d(-50%,-50%,0) scale3d(0.8,0.8,1);
+  transform: translate3d(-50%,-50%,0) scale3d(0.8,0.8,1);
+}
+
+.hovereffect a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  margin: 50px 0 0 0;
+  background-color: transparent;
+}
+
+.hovereffect a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+
+.hovereffect .rotate {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.hovereffect hr {
+  width: 50%;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.hovereffect  hr:nth-child(2) {
+  -webkit-transform: translate3d(-50%,-50%,0) rotate(0deg) scale3d(0,0,1);
+  transform: translate3d(-50%,-50%,0) rotate(0deg) scale3d(0,0,1);
+}
+
+.hovereffect  hr:nth-child(3) {
+  -webkit-transform: translate3d(-50%,-50%,0) rotate(90deg) scale3d(0,0,1);
+  transform: translate3d(-50%,-50%,0) rotate(90deg) scale3d(0,0,1);
+}
+
+.hovereffect h2, .hovereffect hr {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-50%,-50%,0);
+  transform: translate3d(-50%,-50%,0);
+  -webkit-transform-origin: 50%;
+  -ms-transform-origin: 50%;
+  transform-origin: 50%;
+  background-color: transparent;
+  margin: 0px;
+}
+
+.group1, .group2 {
+  left: 50%;
+  position: absolute;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-50%,-50%,0);
+  transform: translate3d(-50%,-50%,0);
+  -webkit-transform-origin: 50%;
+  -ms-transform-origin: 50%;
+  transform-origin: 50%;
+  background-color: transparent;
+  margin: 0px;
+  padding: 0px;
+}
+
+.group1 {
+  top: 40%;
+}
+
+.group2 {
+  top: 60%;
+}
+
+.hovereffect p {
+  width: 30%;
+  text-transform: none;
+  font-size: 15px;
+  line-height: 2;
+}
+
+.hovereffect p a {
+  color: #fff;
+}
+
+.hovereffect p a:hover,
+.hovereffect p a:focus {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+
+.hovereffect  a i {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.group1 a:first-child i {
+  -webkit-transform: translate3d(-60px,-60px,0) rotate(45deg) scale(2);
+  transform: translate3d(-60px,-60px,0) rotate(45deg) scale(2);
+}
+
+.group1 a:nth-child(2) i {
+  -webkit-transform: translate3d(60px,-60px,0) rotate(45deg) scale(2);
+  transform: translate3d(60px,-60px,0)  rotate(45deg) scale(2);
+}
+
+.group2 a:first-child i {
+  -webkit-transform: translate3d(-60px,60px,0) rotate(45deg) scale(2);
+  transform: translate3d(-60px,60px,0) rotate(45deg) scale(2);
+}
+
+.group2 a:nth-child(2) i {
+  -webkit-transform: translate3d(60px,60px,0)  rotate(45deg) scale(2);
+  transform: translate3d(60px,60px,0)  rotate(45deg) scale(2);
+}
+
+.hovereffect:hover hr:nth-child(2) {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(-50%,-50%,0) rotate(0deg) scale3d(1,1,1);
+  transform: translate3d(-50%,-50%,0) rotate(0deg) scale3d(1,1,1);
+}
+
+.hovereffect:hover hr:nth-child(3) {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(-50%,-50%,0) rotate(90deg) scale3d(1,1,1);
+  transform: translate3d(-50%,-50%,0) rotate(90deg) scale3d(1,1,1);
+}
+
+.hovereffect:hover .group1 i:empty, .hovereffect:hover .group2 i:empty {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0) rotate(45deg) scale(1);
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+  </style>
+
+  <link rel="icon" href="images/logo1.jpg"/>
+
+  <nav class="navbar navbar-dark bg-dark navbar-expand-md shadow-sm sticky-top">
+    <a href="#" class="navbar-brand">Dre@m_Te@m</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#mynav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mynav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link" data-value="service">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" data-value="profolio">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" data-value="contactus">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="btn btn-success">Sign Up</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="btn btn-primary">Sign In</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+</head>
+<body>
+
+    <div class="carousel slide" data-ride="carousel" id="mycarousel">
+                  <ol class="carousel-indicators">
+                  <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#mycarousel" data-slide-to="1"></li>
+                  <li data-target="#mycarousel" data-slide-to="2"></li>
+                 
+                </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="beach/tts1.jpg" width="100%" />
+                      <div class="carousel-caption d-none d-md-block">
+                          <h5>First slide label</h5>
+                          <p>Pattaya</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="beach/tts2.jpg" width="100%" />
+                      <div class="carousel-caption d-none d-md-block">
+                          <h5>Second slide label</h5>
+                          <p>Pattaya</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="beach/tts3.jpg" width="100%" />
+                      <div class="carousel-caption d-none d-md-block">
+                          <h5>Third slide label</h5>
+                          <p>Pattaya</p>
+                        </div>
+                    </div>
+                  </div>
+                  <a href="#mycarousel" class="carousel-control-prev" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a href="#mycarousel" class="carousel-control-next" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
+  </div>
+  
+  <div class="container">
+  <section id="hotel">
+    <br><br><br>
+            <div class="container" style="text-align:center;font-weight: ,bold;"><h2>Hotel in Pattaya</h2></div>
+    </section>
+    <div class="card col-md-4" style="max-width: 1500px;">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <div class="hovereffect">
+                  <img src="beach/t1.jpg" class="card-img-top card-img">
+                  <div class="overlay">
+                         <h2>Hover effect 1</h2>
+                         <a class="info" href="#">link here</a>
+                      </div>
+          </div>
+                </div>
+                <div class="col-md-8">
+
+                  <div class="box wow bounceInUp" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-name: bounceInRight;">
+                     <div class="card-body">
+                        <h4 class="card-title"><b>Centara Ground mirage beach resort Pattaya
+                        </b></h4>
+                        <p class="card-text">
+                            Centara Grand Mirage Beach Resort Pattaya is an exciting Lost World themed resort on Wong Amat Beach. You will enjoy 555 sea-facing rooms, suites and family residences (from 42 to 326 sqm.), eight dining venues, an award-winning spa, and a gigantic water park. The Lost World features a freeform pool, a meandering lazy river, waterslides, an adult’s pool, Jacuzzis, cliff jumping platforms, and Monsoon Island children’s water playground. Children can also enjoy two kids clubs, a club lounge dedicated to families, and a plethora of activities. 
+
+                        </p>
+                        <h5>Address</h5>
+                        <p>Address: Centara Grand Mirage Beach Resort Pattaya
+                          277 Moo 5, Naklua, Banglamung, Pattaya 20150, Thailand</p>
+                            <button type="button" class="btn btn-warning">See More</button>
+                        </a>
+                    </div>
+                  </div>
+
+                   
+                </div>
+            </div>
+    </div>
+
+    <div class="card col-md-4" style="max-width: 1500px;">
+            <div class="row no-gutters">
+
+                <div class="col-md-8">
+                  <div class="box wow bounceInUp" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-name: bounceInLeft;">
+                    <div class="card-body">
+                        <h4 class="card-title"><b>
+                        Dusit Thani Pattaya
+                          </b></h4>
+                        <p class="card-text">
+                            Dusit Thani Pattaya Hotel beach resort in Pattaya, Thailand offers Thai luxury and hospitality in the heart of one of Thailand’s prominent beach resort destinations. This five-star Dusit Thani beachfront hotel in Pattaya is conveniently located near the shopping and dining venues of Pattaya City, but its enviable location on the northern end of the majestically curving Gulf of Thailand with direct access to two beachfronts, truly sets it apart from other luxury beach resorts in Pattaya.
+
+                            Situated amidst a tropical garden and boasting stunning panoramic views over Pattaya Bay, this luxury hotel offers the perfect beach getaway in private beach resorts in Pattaya for all types of travellers. Make your next destination this 5-star hotel in Pattaya Beach, Thailand.
+
+                        </p>
+                        <h5>Address</h5>
+                        <p>Addess:240/2 Beach Rd, Bang Lamung District, Chon Buri 20150</p>
+                            <button type="button" class="btn btn-warning">See More</button>
+                        </a>
+                    </div>
+                  </div>
+                    
+                </div>
+                <div class="col-md-4">
+                    <div class="hovereffect">
+                  <img src="beach/t2.jpg" class="card-img-top card-img">
+                  <div class="overlay">
+                         <h2>Hover effect 1</h2>
+                         <a class="info" href="#">link here</a>
+                      </div>
+          </div>
+                </div>
+
+            </div>
+    </div>
+
+    <div class="card col-md-4" style="max-width: 1500px;">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                  <div class="hovereffect">
+                  <img src="beach/t3.jpg" class="card-img-top card-img">
+                  <div class="overlay">
+                         <h2>Hover effect 1</h2>
+                         <a class="info" href="#">link here</a>
+                      </div>
+          </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="box wow bounceInUp" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-name: bounceInDown;">
+                     <div class="card-body">
+                        <h4 class="card-title"><b>HILTON PATTAYA
+</b></h4>
+                        <p class="card-text">
+                            Welcome to Hilton Pattaya, soaring 34 levels above Pattaya's CentralFestival Pattaya Beach, southeast Asia's largest beachfront shopping complex. Our award-winning hotel offers contemporary luxury alongside instant access to beaches, shops, restaurants and attractions. Bangkok's Suvarnabhumi Airport (BKK) is only 90 minutes from this stylish Pattaya hotel.
+
+
+                        </p>
+                        <h5>Address</h5>
+                        <p> Address 333/101 Bang Lamung District, Chon Buri 20260, Thai</p>
+                            <button type="button" class="btn btn-warning">See More</button>
+                        </a>
+                    </div>
+                  </div>
+                   
+                </div>
+            </div>
+    </div>
+
+    <div class="card col-md-4" style="max-width: 1500px;">
+            <div class="row no-gutters">
+
+                <div class="col-md-8">
+                   <div class="box wow bounceInUp" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-name: bounceInUp;">
+                      <div class="card-body">
+                        <h4 class="card-title"><b>LK The Empress
+</b></h4>
+                        <p class="card-text">
+                             Guests may exercise at the fitness centre or arrange day trips at the tour desk. The hotel also provides a business centre and laundry services.
+
+                            Authentic Thai dishes and international food are served at The Circle Restaurant. In-room dining is also possible with room service.
+                        </p>
+                        <h5>Address</h5>
+                        <p>Address 240/1 Beach Rd, Bang Lamung District, Chon Buri 20150, Thai</p>
+                            <button type="button" class="btn btn-warning">See More</button>
+                        </a>
+                    </div>
+                   </div>
+                    
+                </div>
+                <div class="col-md-4">
+                    <div class="hovereffect">
+                  <img src="beach/t4.jpg" class="card-img-top card-img">
+                  <div class="overlay">
+                         <h2>Hover effect 1</h2>
+                         <a class="info" href="#">link here</a>
+                      </div>
+          </div>
+                </div>
+
+            </div>
+    </div>
+
+    <section id="categories">
+            <div class="container" style="text-align:center;font-weight: ,bold;"><h2>More Categories in Pattaya Region</h2></div>
+    </section>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card border-primary" style="max-width: 18rem;">
+                    <div class="card-header"><h3>Hotels</h3></div>
+
+                    <div class="card-body text-secondary">
+                        <p class="card-title">Hotel is a great hotel with the best service in Myanmar</p>
+                        <a href="hotelMaldives.html">
+                            <button type="button" class="btn btn-info">Book Now</button>
+                        </a>
+                    </div>
+                </div>
+             </div>
+
+             <div class="col-md-4">
+                <div class="card border-primary" style="max-width: 18rem;">
+                    <div class="card-header"><h3>Restaurants</h3></div>
+                    <div class="card-body text-secondary">
+                        <p class="card-title"> The best Teaste and can choice of restaurants</p>
+                        <a href="rh.html">
+                            <button type="button" class="btn btn-info">Go Shop</button>
+                        </a>
+                    </div>
+                </div>
+             </div>
+
+             <div class="col-md-4">
+                <div class="card border-primary" style="max-width: 18rem;">
+                    <div class="card-header"><h3>Shopping</h3></div>
+                    <div class="card-body text-info">
+                        <p class="card-title">Myanmar's first and largest shopping center chain</p>
+                        <a href="pataya.html">
+                            <button type="button" class="btn btn-info">Go Shop</button>
+                        </a>
+                    </div>
+                </div>
+             </div>
+      </div>  
+    </div>   
+    </div>            
+<footer class="container-fluid bg-dark py-3"> <!-- py-3 ka sar kyee -->
+      <p style="color:white" class="text-center mb-0">@ 2018 Your company.All right reserved.</p> <!-- mb-0 ka footer a pyae paw aung -->
+  </footer>
+</body>
+</html>

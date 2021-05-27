@@ -1,0 +1,64 @@
+
+@font-face
+{
+	font-family: "Regular1";
+	src: url('font/Regular1.ttf');
+}
+@font-face
+{
+	font-family: "Regular";
+	src: url('font/Regular.ttf');
+}
+@font-face
+{
+	font-family: "Regular3";
+	src: url('font/Regular3.ttf');
+}
+
+@font-face
+{
+	font-family: "Tangerine";
+	src: url('font/Tangerine.ttf');
+}
+@font-face
+{
+	font-family: "Cookie-Regular";
+	src: url('font/Cookie-Regular.ttf');
+}
+
+div#navbar{
+	width:100%;
+	background-color: #4E342E;
+	height: 30px;
+}
+div#navbar ul{
+	padding-left:50px;
+	padding-top: 10px;
+}
+div#navbar ul li{
+	list-style: none;
+	float: left;
+}
+div#navbar ul li a{
+	text-decoration: none;
+	color: #fff;
+	
+	text-transform: uppercase;
+	padding: 8px 20px;
+
+}
+div#navbar ul li a:hover,a.active{
+	background-color: #8D6E63;
+}
+div#navbar div.shoppingcart{
+	float: right;
+	width: 450px;
+	margin-top: -15px;
+}
+h4#line{
+
+	font-family: "Tangerine";
+	text-align: center;
+	font-size: 40px;
+
+}
